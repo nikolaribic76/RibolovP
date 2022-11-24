@@ -26,4 +26,6 @@
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RibolovConnectionString %>" SelectCommand="SELECT * FROM [Grad]"></asp:SqlDataSource>
 
+    tadija
+
 </asp:Content>
