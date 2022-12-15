@@ -2,22 +2,22 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <p>Unesite podatke o ribolovcu:</p>
+    <div ID="forma">
+        <p>Unesite podatke o ribolovcu:</p>
     <br />
-
-     <asp:Label ID="Label1" runat="server" Text="Ime:"></asp:Label><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <br />
-    <br />
-     <asp:Label ID="Label2" runat="server" Text="Prezime:"></asp:Label><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <div class="flex"><asp:Label ID="Label1" runat="server" Text="Ime:"></asp:Label><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></div>
     <br />
     <br />
-     <asp:Label ID="Label3" runat="server" Text="Adresa:"></asp:Label><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <div class="flex"><asp:Label ID="Label2" runat="server" Text="Prezime:"></asp:Label><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></div>
     <br />
     <br />
-     <asp:Label ID="Label4" runat="server" Text="Telefon:"></asp:Label><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        <div class="flex"><asp:Label ID="Label3" runat="server" Text="Adresa:"></asp:Label><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></div>
     <br />
     <br />
-     <asp:Label ID="Label5" runat="server" Text="Grad:"></asp:Label><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+        <div class="flex"><asp:Label ID="Label4" runat="server" Text="Telefon:"></asp:Label><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></div>
+    <br />
+    <br />
+        <div class="flex"><asp:Label ID="Label5" runat="server" Text="Grad:"></asp:Label><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></div>
     <br />
     <br />
 
@@ -25,7 +25,6 @@
     <asp:Button ID="Button2" runat="server" Text="Odustani" OnClick="Button2_Click" />
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RibolovConnectionString %>" SelectCommand="SELECT * FROM [Grad]"></asp:SqlDataSource>
-
-    
+    </div>
 
 </asp:Content>
